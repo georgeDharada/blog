@@ -28,7 +28,7 @@ twitter_username: GeorgeDHarada
 github_username:  georgeDharada
 
 # Build settings
-theme: jekyll-theme-architect
+theme: minima
 plugins:
   - jekyll-feed
 
