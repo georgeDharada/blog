@@ -28,7 +28,9 @@ twitter_username: GeorgeDHarada
 github_username:  georgeDharada
 
 # Build settings
-theme: minima
+
+# Removed minima theme as it is now a regular theme (no longer gem based theme, regular theme)
+# theme: minima
 plugins:
   - jekyll-feed
 
