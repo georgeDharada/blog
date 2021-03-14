@@ -21,7 +21,7 @@
 title: George Cloud
 # email: gharada@au1.ibm.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A blog to record some techy and hands on material
+  A blog to record my thoughts on tech and hands on material on cloud
 baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://georgedharada.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: georgedharada
@@ -36,7 +36,7 @@ linkedin_username: georgedharada
 # New fields not defaulted by jekyll new with the minima theme
 # Add a copyright. A copyright symble and year will be added automatically
 # copyright: Company Name, Inc.
-copyright: "All posts are personal and not representative of any entity."
+copyright: "* All posts are personal and not representative of any entity."
 # title-logo is a new field that, when used, displays a logo
 # instead of custom text. Ideally, image is 50px high and takes up
 # minimal horizontal space. Tested with a new root "images" folder e.g.:
