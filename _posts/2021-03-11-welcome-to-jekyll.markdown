@@ -16,4 +16,4 @@ print_hi('George')
 {% endhighlight %}
 
 
-This blog website is make of Jekyll on github. Feel free to check it out!
+This blog website is made of Jekyll on github. Feel free to check it out!
