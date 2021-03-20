@@ -3,10 +3,13 @@ layout: post
 title:  "Trying out Red Hat Openshift for containerisation"
 date:   2021-03-13 21:01:54 +1100
 category: Tech
+image: /blog-tech/assets/images/openshift1.png
 ---
 There is a free demo available for anyone to try out Red Hat Openshift.
 Here is the link:
 https://developer.ibm.com/openlabs/openshift
+
+![]( {{page.image | relative_url}})
 
 I gave it a try myself and was able to learn the following:
 
