@@ -3,9 +3,8 @@ layout: post
 title:  "Containerisation"
 date:   2021-03-13 21:01:54 +1100
 category: Business
+image: /images/openshift.png
 ---
-## Containerisation
-
 Today, a majority of businesses include technology in some way. Whether it be using simple computing or running mission critical and cloud native workloads.
 It has been still recent that Cloud computing came along and brought about the benefits of offloading customers from on-premise to a cloud environment, and reduce operation costs as well as achieve flexible scaling.
 Being able to enjoy virtualisation by having bare metal servers of virtual servers on the cloud was great. However we are seeing the next set of digital transformation with containerisation.
