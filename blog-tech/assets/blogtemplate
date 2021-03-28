@@ -21,3 +21,12 @@ Syntax:
 [LinkCaption](URL)
 
 ![ImageHereCanbeblank]( {{page.image1 | relative_url}})
+
+
+---
+**NOTE**
+Creates a line
+
+---
+
+> **_NOTE:_**  The note content.
