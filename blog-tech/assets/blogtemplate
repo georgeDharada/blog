@@ -1,0 +1,23 @@
+---
+layout: post
+title:  ""
+date:   2021-03-13 21:01:54 +1100
+category: Tech Business
+image: /images/default-image.png
+image1: /blog-tech/assets/images/file.png
+---
+
+What is the question I am trying to answer?
+Gather some date (facts, knowledge, experience)
+Use diagrams
+Make hypothesis about data
+Tell a story
+
+This is an 'agile' blog post. More details will be added
+
+
+
+Syntax:
+[LinkCaption](URL)
+
+![ImageHereCanbeblank]( {{page.image1 | relative_url}})

@@ -8,7 +8,7 @@ image1: /blog-tech/assets/images/openshift1.png
 ---
 There is a free demo available for anyone to try out Red Hat Openshift.
 Here is the link:
-https://developer.ibm.com/openlabs/openshift
+[lab link](https://developer.ibm.com/openlabs/openshift)
 
 ![]( {{page.image1 | relative_url}})
 
