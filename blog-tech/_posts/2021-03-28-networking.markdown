@@ -5,6 +5,7 @@ date:   2021-03-28 21:01:54 +1100
 category: Tech
 image: /images/networkingicon.png
 image1: /blog-tech/assets/images/network1.png
+image2: /blog-tech/assets/images/network2.png
 ---
 
 The question for today is, what is the best networking architecture for my workload?
@@ -21,9 +22,14 @@ How do we now communicate with this server?
 
 
 ---
-**NOTE**
-Creates a line
+**The Theory**
+In IBM Cloud, every server is given a public IP and private IP.
+IBM Cloud has a large private network which connects all the servers.
+Only segments of the private network are allocated with vlans to users.
+A server in a particular vlan cannot access other vlans in other cloud accounts.
+By default, it also cannot access other vlans in the same cloud accounts. You can enable VRF to the vlans can communicate with each other.
 
+![]( {{page.image2 | relative_url}})
 ---
 
 > **_NOTE:_**  The note content.
