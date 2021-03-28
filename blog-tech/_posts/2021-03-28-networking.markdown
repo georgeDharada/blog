@@ -28,6 +28,7 @@ This would not be a practical scenario, but the bare minimum is to have a bare m
 
 Clients can access the server through public IP, so it is important to disable the public network connection to avoid unwanted connection from outside.
 Company users can also connect through public network until it is disabled. Ideally, you would use the private network to connect.
+Company users can use SSL VPN to connect to the private network for operational purposes.
 Public network should be enabled only after enough security measures like firewalls and load balancers are put into place.
 
 
@@ -80,10 +81,6 @@ How do you connect to the network? You have 3 options:
 
 
 
-Problem 1:
-
-
-Reference Architecture:
 
 
 
