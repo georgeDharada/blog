@@ -11,7 +11,7 @@ image4: /blog-tech/assets/images/network4.png
 image5: /blog-tech/assets/images/network5.png
 ---
 
-The question for today is, what is the best networking architecture for my workload?
+The question for today is, what is the best networking architecture for my workload?  
 Today I will use an example company to try to explain how you can choose a good architecture for you.
 
 
@@ -19,8 +19,8 @@ Today I will use an example company to try to explain how you can choose a good 
 Lets say there is GeorgieCorp, which currently has no cloud.
 GeorgieCorp wants to just try the baremetal server to get the feels, not for production but for testing.
 
-FR1: Provide IaaS capabilities on the global cloud platform
-NFR: None
+FR1: Provide IaaS capabilities on the global cloud platform  
+NFR: None  
 (FR=Functional requirement, NFR=Non-Functional requirement)
 
 ![]( {{page.image1 | relative_url}})
@@ -31,9 +31,9 @@ This would not be a practical scenario, but the bare minimum is to have a bare m
 
 ![]( {{page.image4 | relative_url}})
 
-Clients can access the server through public IP, so it is important to disable the public network connection to avoid unwanted connection from outside.
-Company users can also connect through public network until it is disabled. Ideally, you would use the private network to connect.
-Company users can use SSL VPN to connect to the private network for operational purposes.
+Clients can access the server through public IP, so it is important to disable the public network connection to avoid unwanted connection from outside.  
+Company users can also connect through public network until it is disabled. Ideally, you would use the private network to connect.  
+Company users can use SSL VPN to connect to the private network for operational purposes.  
 Public network should be enabled only after enough security measures like firewalls and load balancers are put into place.
 
 
@@ -88,9 +88,9 @@ How do you connect to the network? You have 3 options:
 ## Scenario 2 Set up basic firewall for public access, and access through VPN for operational purpose
 GeorgieCorp decides to add some basic firewall and set up connection from public and private connections.
 
-FR1: Provide IaaS capabilities on the global cloud platform
-FR2: Protect internet facing workloads with network firewall services
-FR3: Ability to access workloads for operational purposes securely using VPN over internet
+FR1: Provide IaaS capabilities on the global cloud platform  
+FR2: Protect internet facing workloads with network firewall services  
+FR3: Ability to access workloads for operational purposes securely using VPN over internet  
 NFR: None
 
 ### Reference architecture:
@@ -98,8 +98,8 @@ NFR: None
 ![]( {{page.image5 | relative_url}})
 
 Architecture Decisions:
-AD1: Baremetal server for IaaS capabilities
-AD2: SSL VPN for secure connection through private network
+AD1: Baremetal server for IaaS capabilities  
+AD2: SSL VPN for secure connection through private network  
 AD3: Hardware firewall for protection with internet facing workloads
 
 The most basic is the hardware firewall that can be added onto a bare metal server.
