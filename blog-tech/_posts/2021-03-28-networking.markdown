@@ -19,6 +19,10 @@ Today I will use an example company to try to explain how you can choose a good 
 Lets say there is GeorgieCorp, which currently has no cloud.
 GeorgieCorp wants to just try the baremetal server to get the feels, not for production but for testing.
 
+FR1: Provide IaaS capabilities on the global cloud platform
+NFR: None
+(FR=Functional requirement, NFR=Non-Functional requirement)
+
 ![]( {{page.image1 | relative_url}})
 
 ### Reference architecture:
@@ -84,16 +88,25 @@ How do you connect to the network? You have 3 options:
 ## Scenario 2 Set up basic firewall for public access, and access through VPN for operational purpose
 GeorgieCorp decides to add some basic firewall and set up connection from public and private connections.
 
+FR1: Provide IaaS capabilities on the global cloud platform
+FR2: Protect internet facing workloads with network firewall services
+FR3: Ability to access workloads for operational purposes securely using VPN over internet
+NFR: None
+
 ### Reference architecture:
 
 ![]( {{page.image5 | relative_url}})
+
+Architecture Decisions:
+AD1: Baremetal server for IaaS capabilities
+AD2: SSL VPN for secure connection through private network
+AD3: Hardware firewall for protection with internet facing workloads
 
 The most basic is the hardware firewall that can be added onto a bare metal server.
 The baremetal server is ordered with public and private network connectivity, so through the public network people can access via public IP address through firewall. The private IP address can be used to connect to the server via the VPN.
 
 
 There is room for further enhancements using the VRA and direct link. More updates will be made on this blog post
-
 
 This is an 'agile' blog post. More details will be added
 
