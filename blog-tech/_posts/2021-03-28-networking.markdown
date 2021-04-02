@@ -8,6 +8,7 @@ image1: /blog-tech/assets/images/network1.png
 image2: /blog-tech/assets/images/network2.png
 image3: /blog-tech/assets/images/network3.png
 image4: /blog-tech/assets/images/network4.png
+image5: /blog-tech/assets/images/network5.png
 ---
 
 The question for today is, what is the best networking architecture for my workload?
@@ -80,9 +81,18 @@ How do you connect to the network? You have 3 options:
 ---
 
 
+## Scenario 2 Set up basic firewall for public access, and access through VPN for operational purpose
+GeorgieCorp decides to add some basic firewall and set up connection from public and private connections.
+
+### Reference architecture:
+
+![]( {{page.image5 | relative_url}})
+
+The most basic is the hardware firewall that can be added onto a bare metal server.
+The baremetal server is ordered with public and private network connectivity, so through the public network people can access via public IP address through firewall. The private IP address can be used to connect to the server via the VPN.
 
 
-
+There is room for further enhancements using the VRA and direct link. More updates will be made on this blog post
 
 
 This is an 'agile' blog post. More details will be added
