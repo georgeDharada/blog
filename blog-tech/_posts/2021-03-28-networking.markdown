@@ -97,7 +97,7 @@ NFR: None
 
 ![]( {{page.image5 | relative_url}})
 
-Architecture Decisions:
+Architecture Decisions:  
 AD1: Baremetal server for IaaS capabilities  
 AD2: SSL VPN for secure connection through private network  
 AD3: Hardware firewall for protection with internet facing workloads

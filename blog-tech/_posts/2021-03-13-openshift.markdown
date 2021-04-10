@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Trying out Red Hat Openshift for containerisation"
+title:  "How do you get a feel for Red Hat Openshift for containerisation?"
 date:   2021-03-13 21:01:54 +1100
 category: Tech
 image: /images/openshift.png
