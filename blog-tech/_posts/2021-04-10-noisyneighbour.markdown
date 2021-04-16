@@ -30,7 +30,7 @@ Behind the scenes, there are threads. Threads are CPU instructions and sometimes
 ![]( {{page.image1 | relative_url}})
 
 There's some good reading on this here:  
-[Hyper-V Virtual CPUs Explained](https://www.altaro.com/hyper-v/hyper-v-virtual-cpus-explained/)
+[Hyper-V Virtual CPUs Explained](https://www.altaro.com/hyper-v/hyper-v-virtual-cpus-explained/)  
 [Understanding CPU Steal Time - when should you be worried?](https://scoutapm.com/blog/understanding-cpu-steal-time-when-should-you-be-worried)
 
 
@@ -54,21 +54,29 @@ Architecture decision: If your requirements include avoiding the effects, then t
 1. Virtual server dedicated host  
 2. Bare metal server
 
-With these options you will not face the noisy neighbour effects.
+With these options you will not face the noisy neighbour effects. Alternatively:
 
-You can also hypervise the servers yourself with VMware, and control the effects internally. However in that case you will not suffer from other people's workload, but you may suffer from your own workloads.
+3. You can also hypervise the servers yourself with VMware, and control the effects internally. However in that case you will not suffer from other people's workload, but you may suffer from your own workloads.
 
 If for example you are using VMware to hypervise your servers yourself, and if you are concerned about one of your VSIs affecting the other VSIs due to it's CPU usage, then you would have the administration tool to help with the monitoring and migration to isolated CPU-intensive servers. (like vMotion)
 
 There's some good reading on this here:  
-[What’s a “Noisy Neighbor,” and How Can ControlUp Shut Them Up?](https://www.controlup.com/resources/blog/entry/whats-a-noisy-neighbor-and-how-can-controlup-shut-them-up/)
+[What’s a “Noisy Neighbor,” and How Can ControlUp Shut Them Up?](https://www.controlup.com/resources/blog/entry/whats-a-noisy-neighbor-and-how-can-controlup-shut-them-up/)  
 [Understanding the Impact of a Noisy Neighbor Using vRealize Operations](https://blogs.vmware.com/management/2016/11/understanding-impact-noisy-neighbor-using-vrealize-operations.html)
 
 
-### Is my data affected too?
+### Is my data performance affected too?
 
 When reading and writing data, the noisy neighbour effects kicks in too.  
 The reason why VSI storage does not typically offer IOPS measures is because various effects could influence the speed of the read and write.  
 So what if you need constant and reliable data transfer? It would be best to use bare metal server for databases. (Or at least a dedicated VSI host).  
 Just for storage needs, you can also use File or Block storage, which gives you a more exact IOPS measure for your storage.
 
+
+### What are other benefits of bare metal server over virtual server?
+With bare metal server you cango up to 10GB network uplink for a low latency network connection.  
+Virtual servers only allow up to 1GB, so you have more control over the speed.
+
+Further, recently IBM Cloud introduced 25GB network options for certain baremetal servers.  
+For more information, refer to the following page:  
+https://www.ibm.com/cloud/blog/announcements/newly-released-25gbe-standard-on-ibm-cloud-bare-metal-servers
