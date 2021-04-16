@@ -15,7 +15,7 @@ IT decisions can make a huge difference to the longevity of the business in the 
 But that's not all. When we talk to people who can potentially give some technology guidance, we want to make sure that person knows what they are talking about.  
 
 As a Customer Success Manager, this purpose made me stand up and create this blog.  
-When I talk to my customers, I want to make sure I am confident about my knowledge, that I can explain it in my own way, I have tested part if it myself, I have compared it with other solutions and I have my personal point of view on it. This is called technical eminence.  
+When I talk to my customers, I want to make sure I am confident about my knowledge, that I can explain it in my own way, I have tested part of it myself, I have compared it with other solutions and I have my personal point of view on it. This is called technical eminence.  
 This blog is my creative space where I will record my learnings, observations and thoughts. I aim to make it as useful as possible.
 
 The blog will be updated constantly with new content, and if you like, you can subscribe with RSS feed too! Feel free to connect with me via my social media, and leave me a message if you would like to discuss certain things or would like me to feature a certain topic.
