@@ -50,7 +50,7 @@ With vCenter, you would need additional license but it brings the following bene
 In other words, you can still use vSphere without the vCentre, however you will not get the added benefits of DR and HA etc. So vCenter is recommended.  
 You can connect to vCenter Server with a vSphere client, and instead of one host you can see multiple hosts at once. To enable vCenter, you would need to install the vCenter Server Appliance (vCSA), which can sit on top of a VM in vSphere.  
 
-> **_FUN FACT:_**  There used to be vCenter Server for Windows, which VMware said farewell too: https://blogs.vmware.com/vsphere/2017/08/farewell-vcenter-server-windows.html. vCSA is the standard today.
+> **_FUN FACT:_**  There used to be vCenter Server for Windows, which VMware said farewell too. vCSA is the standard today: https://blogs.vmware.com/vsphere/2017/08/farewell-vcenter-server-windows.html.
 
 
 Here’s another question. **I have VMware workloads on-prem and want to get it on cloud. What is the easiest way?**
@@ -86,6 +86,6 @@ More insight into how the vCenter looks over IBM Cloud:
 VMware Solutions Shared allows you to have most of the resources managed by IBM, so that you can focus on managing the VMs.
 
 For those that are more advanced:  
-VMware addons like Spectrum Protect Plus for Backup and Zerto for DRS can be configured
-It is possible to manage VMware on other cloud providers with IBM.
-Stretch clusters bring additional flexibility around HA: [What is VMware Stretched Cluster?](https://www.vladan.fr/what-is-vmware-stretched-cluster/)
+* VMware addons like Spectrum Protect Plus for Backup and Zerto for DRS can be configured  
+* It is possible to manage VMware on other cloud providers with IBM.  
+* Stretch clusters bring additional flexibility around HA: [What is VMware Stretched Cluster?](https://www.vladan.fr/what-is-vmware-stretched-cluster/)
