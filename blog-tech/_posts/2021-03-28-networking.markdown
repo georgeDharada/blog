@@ -108,7 +108,9 @@ The baremetal server is ordered with public and private network connectivity, so
 
 There is room for further enhancements using the VRA and direct link. More updates will be made on this blog post
 
-This is an 'agile' blog post. More details will be added
+
+
+I will post another blog to give further details on networking!
 
 
 
