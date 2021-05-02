@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Which VMware option should I go with for my use case?"
+title:  "Which VMware option does my business need?"
 date:   2021-04-19 21:01:54 +1100
-category: Tech
+category: Business
 image: /images/vmware.png
-image1: /blog-tech/assets/images/vmware1.png
-image2: /blog-tech/assets/images/vmware2.png
-image3: /blog-tech/assets/images/vmware3.png
-image4: /blog-tech/assets/images/vmware4.png
+image1: /blog-business/assets/images/vmware1.png
+image2: /blog-business/assets/images/vmware2.png
+image3: /blog-business/assets/images/vmware3.png
+image4: /blog-business/assets/images/vmware4.png
 ---
 
 Any company utilising IT would need to have a Data Center to manage IT infrastructure.
@@ -51,8 +51,9 @@ In other words, you can still use vSphere without the vCentre, however you will 
 You can connect to vCenter Server with a vSphere client, and instead of one host you can see multiple hosts at once. To enable vCenter, you would need to install the vCenter Server Appliance (vCSA), which can sit on top of a VM in vSphere.  
 
 > **_FUN FACT:_**  There used to be vCenter Server for Windows, which VMware said farewell too. vCSA is the standard today: https://blogs.vmware.com/vsphere/2017/08/farewell-vcenter-server-windows.html.
-
-
+  
+  
+  
 Here’s another question. **I have VMware workloads on-prem and want to get it on cloud. What is the easiest way?**
 
 ### Lift and Shift ###
@@ -60,9 +61,10 @@ If you wish to minimise the efforts required to refactor (rewrite parts of code 
 This is something no other cloud providers have, since with other providers there are some form of refactoring involved and so you need to take into account additional costs.
 
 More on the advantage of using IBM Cloud for lifting and shifting VMware workloads:  
-[Lift and shift seamlessly with IBM Cloud for VMware Solutions](https://imaginenext.ingrammicro.com/b2b-tech-talk/lift-and-shift-seamlessly-with-ibm-cloud-for-vmware-solutions)
+[Lift and shift seamlessly with IBM Cloud for VMware Solutions](https://imaginenext.ingrammicro.com/b2b-tech-talk/lift-and-shift-seamlessly-with-ibm-cloud-for-vmware-solutions)  
+It is interesting to hear the American Airline case, including the benefit they had on the ability to scale down as needed due to unforeseen circumstances like the Covid-19 pandemic; which could have let them stuck with underutilised physical servers if they hadn't moved to the cloud.
 
-IBM Cloud VMware solutions are enterprise-grade, hybrid and developer-ready, secure to the core and AI-powered. By starting the journey to cloud, this will also open new paths to integrating with cloud native applications!  
+IBM Cloud VMware solutions are enterprise-grade, hybrid and developer-ready, secure to the core and AI-powered. By starting the journey to cloud, this will also open new paths to integrating with cloud native applications, which could help bring new features and functions to market!  
 Further benefits:  
 1. Flexible scaling of workloads according to business needs  
 2. You control the full stack from software to hardware for your vSphere, therefore meeting strict permission and compliance regulations. You can even lift and shift your whole operation processes!  
@@ -86,6 +88,6 @@ More insight into how the vCenter looks over IBM Cloud:
 VMware Solutions Shared allows you to have most of the resources managed by IBM, so that you can focus on managing the VMs.
 
 For those that are more advanced:  
-* VMware addons like Spectrum Protect Plus for Backup and Zerto for DRS can be configured  
+* VMware addons like Spectrum Protect Plus for data protection, Veeam for Backup and Zerto for DRS can be configured  
 * It is possible to manage VMware on other cloud providers with IBM.  
 * Stretch clusters bring additional flexibility around HA: [What is VMware Stretched Cluster?](https://www.vladan.fr/what-is-vmware-stretched-cluster/)
