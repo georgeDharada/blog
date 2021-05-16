@@ -11,7 +11,7 @@ image3: /blog-business/assets/images/watsonassistant.png
 image4: /blog-business/assets/images/research.png
 image5: /blog-business/assets/images/chip.png
 ---
-image0: /blog-business/assets/images/warroom.png
+![]( {{page.image0 | relative_url}})
 
 IBM has just completed the 2021 Think Conference.  
 Going straight to the point, and sharing my point of view, I believe the 3 key focus is the following:  
