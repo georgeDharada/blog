@@ -49,7 +49,7 @@ Derek Byrnes from Services Australia talked about how Australia had to navigate 
 The Australian Immunisation Register (AIR) had to track COVID vaccine to person, meet legislation mandates and provide easy access to immunisation statements both in Australia and overseas. It was becoming an issue when data like immunisation history was not available to be extracted and viewed in time, and there were Australians who could not board the plane.  
 The legacy mainframe system built 10-15 years ago was not designed for the high volume required to track and extract information while meeting legislation.  
 
-#### **From uncertainty, Services Australia had to be bold.
+#### From uncertainty, Services Australia had to be bold.
 
 The approach was to scale their current static servers in place while, also implementing APIs with containerisation to provide elasticity and dynamic scaling using Openshift and openstack.  
 Services Australia had to test the waters for the two approach, and emphasised the importing of 'test, test, and more testing', then eventually came to the decision point to go for one solution. They had jumped in with the containerised approach, to meet dynamic scaling demands and iterative approach.  
@@ -60,7 +60,7 @@ It was a long process that took time to mature, and it helped to have agile prac
 This has helped Service Australia not only to utilise the cloud, but also transform their working culture. The emphasis again here is the dynamic scaling and the iterative approach that is achievable with a flexible architecture like microservices which promotes agile and continuous delivery/integration. Services Australia was able to continue contributing to the vaccine rollout with the help of cloud, and strives to making economic and social impact, all in humble hopes to move from the pandemic back to normality.  
 Derek quotes, "The speed of change is only ever increasing. Iterate fast with a committed and engaged team intent on achieving the agreed outcome".
 
-#### **Aviation struggles**
+#### Aviation struggles
 
 On the same note with Covid-19, the most obvious industry that had a direct hit was aviation.  
 Delta Air Lines VP Narayanan Krishnakumar speaks of how the pandemic created a whole lot of hurt, however they did not let the crisis go to waste, and explored ways they could do digital transformation creatively.  
