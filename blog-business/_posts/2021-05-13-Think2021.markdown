@@ -1,0 +1,141 @@
+---
+layout: post
+title:  "title:  "My view on key messages from IBM 2021"
+date:   2021-05-13 21:01:54 +1100
+category: Business"
+image: /images/think.png
+image1: /blog-business/assets/images/warroom.png
+image2: /blog-business/assets/images/codeengine.png
+image3: /blog-business/assets/images/watsonassistant.png
+image4: /blog-business/assets/images/research.png
+image5: /blog-business/assets/images/chip.png
+---
+
+IBM has just completed the 2021 Think Conference.  
+Going straight to the point, and sharing my point of view, I believe the 3 key focus is the following:  
+1. Digital Transformation
+2. Hybrid Cloud
+3. AI
+
+What does this mean to you? Or do you need a high level summary?  
+I have summarised my own learning and will try to highlight the relevance it would bring to IBM public cloud stakeholders.
+
+### About IBM Think conference:
+Annual conference showcasing IBM’s latest direction, strategies and technology.  
+2021 Think was held virtually, and there were sessions that were tailored towards APAC audiences. On-demand sessions should still be available to view post-event:  
+[Link to IBM Think2021 on-demand sessions](https://www.ibm.com/events/think/)
+
+
+### Key message and executive summary:  
+(Since I have managed to write quite extensively, I have made a shortend executive summary of my whole post! This is also helpful to know the structure of my long post)  
+
+IBM CEO Arvind Krishna gave a strong message that, “IBM is all-in on hybrid cloud and AI. Laser focused to deliver critical innovation”. The overarching purpose is that technology is changing faster than we are anticipating. Supply chain disruption, technical innovation directly linking to business competitiveness and recent Covid pandemic that forced us to rapidly re-think our current technology.  
+Various stakeholders and IBM partners gave real scenarios when digital transformation was essential, and the stories behind their journey. An open hybrid cloud is the solution to help manage complex distributed environments, and AI is the solution that enables innovation by making the most of available data and making processes better. What was impressive is that IBM has organised technology across a wide range in the stack to commit to delivering the foundation of hybrid cloud and AI.
+
+The problems call today that technology is transforming, and business needs to transform to go along. Services Australia, Delta Air Lines and United Airlines tell the story of the impact of Covid-19 pandemic and other crisis affects business any time, and enhancing IT systems is a key solution. Innovation is also what keeps a company competitive. Hybrid Cloud and AI are 2 main solution by IBM that helps on the journey of transformation, and we can expect not only technology but people and culture to transform along. Leaders of the world acknowledge this, and IBM also offers garage service to co-create and promote a collaborative culture.  
+Hybrid cloud is built on open standards and allows the flexibility to design workloads effectively with technology powered by redhat/IBM satellite and the right level of abstraction depending on the requirements. IBM and Cisco's shared vision on distributed cloud.  
+AI is proven to boost innovation, make use of data that is evergrowing and be more personalised for any occasion as we see in stories told by Telstra and CVS Health.  
+In a tour into IBM Research labs, IBM shows the ongoing commitment to enhance hardware to be further robust to handle Hybrid cloud and AI.
+
+---
+
+### The problem: Today’s need for rapid technology transformation  
+We had some key inspirational stories shared where organisation from various industries including government, finance, telco, aviation has shared struggles to keep up with current challenges and went on the path of digital transformation.
+
+The most obvious problem that we see is the effect of the Covid-19 pandemic, and how it has forced us to make decades worth of technology change in a few months.  
+Derek Byrnes from Services Australia talked about how Australia had to navigate through rough seas to respond to Covid-19. Being responsible for the delivery of accessible and social, health and child support services and payments to Australians, they were at the forefront of the pandemic response.  
+The Australian Immunisation Register (AIR) had to track COVID vaccine to person, meet legislation mandates and provide easy access to immunisation statements both in Australia and overseas. It was becoming an issue when data like immunisation history was not available to be extracted and viewed in time, and there were Australians who could not board the plane.  
+The legacy mainframe system built 10-15 years ago was not designed for the high volume required to track and extract information while meeting legislation.  
+
+##### From uncertainty, Services Australia had to be bold.
+
+The approach was to scale their current static servers in place while, also implementing APIs with containerisation to provide elasticity and dynamic scaling using Openshift and openstack.  
+Services Australia had to test the waters for the two approach, and emphasised the importing of 'test, test, and more testing', then eventually came to the decision point to go for one solution. They had jumped in with the containerised approach, to meet dynamic scaling demands and iterative approach.  
+It was a long process that took time to mature, and it helped to have agile practice like war rooms for everyone to understand the context and monitor across all channels, Derek quoted they should have always done this over weekly meetings.
+
+![Collaboration in the Warroom]( {{page.image1 | relative_url}})
+
+This has helped Service Australia not only to utilise the cloud, but also transform their working culture. The emphasis again here is the dynamic scaling and the iterative approach that is achievable with a flexible architecture like microservices which promotes agile and continuous delivery/integration. Services Australia was able to continue contributing to the vaccine rollout with the help of cloud, and strives to making economic and social impact, all in humble hopes to move from the pandemic back to normality.  
+Derek quotes, "The speed of change is only ever increasing. Iterate fast with a committed and engaged team intent on achieving the agreed outcome".
+
+###### Aviation struggles  
+On the same note with Covid-19, the most obvious industry that had a direct hit was aviation.  
+Delta Air Lines VP Narayanan Krishnakumar speaks of how the pandemic created a whole lot of hurt, however they did not let the crisis go to waste, and explored ways they could do digital transformation creatively.  
+With IBM's help, Delta Air Lines modernised their IT systems by containerising, and adding AI capabilities such as baggage checking robots, contact centers and other customer facing applications.  
+As Delta Air Lines emerge from the pandemic, they will keep climbing, and emphasised the importance of faster time to market for transformations like this.
+
+United Airlines CEO Scott Kirby also presented his views on the impact of the need for culture change as a response to the crisis. They quickly accepted the reality of the crisis, knew that there was no time for luxury and decades worth of decisions had to be made. In the midst of harsh situations like having only 1 passenger flying on a flight, United Airlines had to think survival and reduce costs internally. **However they made sure there were still investments in technology.** They quickly recognised that having the right architecture was important to go fast, automating programs, building systems to hold flights and still enhancing the system while keeping in mind what the customers feel when they fly. Scott personally has mentioned that aviation can be a difference maker to make real steps towards bigger societal change including climate change, and that we should be responsible to solve these for the next coming generations (Scott is a father of 7 kids too!).
+
+All 3 stories, Services Australia, Delta Air Line and United Airlines have something in common. They all did not simply play defence, but had also recognised that taking action to transform technology was important for the business and for the society. As a result they would be in a better position as they recover from the impact of the pandemic.
+
+### The change in culture -> Collaborative, open, agile
+
+Transformation not only with the technology, but also the culture was key in the above stories too. Well that is definitely true. Operation is complete with people and technology working together, so even if we bring in great technology, if we have not created the right procedures and cultures then that technology won't be able to add much value.  
+We can look at this from 3 areas:  
+1. The open mentality  
+2. Bringing in technology that 'supports' the openness  
+3. Getting the team involved and changing the culture
+
+IBM President and former Redhat CEO Jim Whitehurst explains that IT is changing corporate culture too, and questions what shape do you want your business to take.  
+Companies today compete on the basis of innovation, and it is that simple. Innovation can come from many places today, whether from customers, partners, competitors too.  
+The hybrid cloud and open standards help to keep everything de-centralised, therefore promoting collaboration and innovation, like in the case for Services Australia. One of the world's largest oilfield services company Schlumberger also made certain systems accessible to suppliers and partners everywhere in the world and brought further growth.  
+IBM also had a strong culture of collaboration, building ecosystems with Salesforce, ServiceNow, VMware and even partnership with AWS if it helps to open up opportunities for innovation. Jim quotes, "IBM is open to business".  
+I thought that was a nice wrap up from Jim who comes from Red Hat and had previously been in the forefront to promote open technology, indeed if we are closed then we may miss out on all the innovation.
+
+Why open? President of Salesforce Bred Tailor comments on this. Salesforce is another business that went through decades worth of transformation in 13 months. They strived not to let a crisis go to waste; crisis here not just describing the pandemic, but also disruption to supply chain, the customers and any other ways. Salesforce saw customers go through digital transformation too. Customers organised contact center on the cloud, digitise relationships with resellers and saw financial services set up self-service portals to enable quick management online. Banks went away from silos to a single view along investment banking.  
+It is important to break silos both in technical areas and higher up in the stack, break business silos too. Customer expectations will always be higher and Bred poses us to think of the importance of creating a single unified system across.
+
+IBM Global Garage lead Debbie Vavangas comments that the emergence of hybrid cloud brought limitless opportunities. The way we work and how we build are changing, and the need for speed is never greater. As we all struggle to bring further speed to value, the garage team shares how they have assisted Woodside through their transformation journey with their new digital HR onboarding solution.  
+Garage team is a team in IBM that helps to co-create, co-execute and co-operate with customers, organising sessions such as business framing and design thinking to help customers realise new value quickly. Debbie mentions the 'fishbowl' approach that the garage team takes, which enables a transparent and collaborative approach to solving business problems. During the discussion with members from Woodside the point was made clear that vision requires transformation in the culture also; the way we work. It is important to reimagine the end to end process and garage is about transformation that lasts.
+
+
+### Hybrid cloud, for distributed computing with open standard
+
+So what makes Hybrid cloud a unique solution to the digital transformation and achieving open collaboration/innovation?  
+IBM Research Director for Hybrid Cloud Platform talks about how cloud is a whole new nuance. It does bring a different type of complexity to on-premise design, such as security and different cloud vendors. Cloud computing in itself is like having one giant computer that works together as we see more businesses are requiring distributed computing systems.  
+When managing the complexity of distributed computing, Linux is the OS generally used for Data Center and virtualisation, and Kubernetes is the current top technology when it comes to open container design. Putting together Red Hat Enterprise Linux and Red Hat Openshift enables a Hybrid Cloud platform powered by Red Hat open technology. In my view, the key value for open technology is that the extensive community will continue to make the technology better and better.
+
+When choosing the right level of abstraction, there is definitely a lot of choice too. Knative with Code Engine etc picture.
+We had Pfizer see success by deploying core business applications on SAP HANA to accelerate real-time insights and streamline business processes with IBM Power Systems. We also saw SiB solutions, logtech company in Sweden, utilise Code Engine to enable flawless logistics. Code Engine is a Knative serverless solution that abstracts away everything up to the point of coding and deploying the application. Sverrir Valgeirsson from SiB solutions talk about how he came to choose Code Engine due to the ease of set up, how it can run anything that is given and they can drop down to command line interface when needed.  
+
+![]( {{page.image2 | relative_url}})
+
+IBM Satellite is another exciting new technology that helps with managing in the distributed computing systems. Satellite allows you to run services anywhere, whether from on-premise, other cloud or from edge locations, and manage from a single pane of glass from IBM Cloud console. So you can have workloads where you need them. We had Cisco CTO Jeff Gatz who emphasised IBM and Cisco's shared vision on distributed cloud. IBM CTO and Fellow Jason McGee did a demo and shared the portability of satellite. The amazing thing was that he was able to show how he could register a server that was right behind him in his house! Satellite is about 'taking the closet to cloud' mentality, and can be very effective when built around ansible and openshift.
+
+### AI, for further innovation
+
+What makes AI the other solution to open collaboration/innovation?  
+IBM Research for AI Application Modernisation expert Maja Vukovic shares IBM's new exciting project where AI is learning a new language: Coding! Project CodeNet launched at the time of writing (mid-2021). It enables teaching AI to code using a very large dataset and is open worldwide for equal and free access. How is that significant? Imagine decades worth of code that sits in a mainframe with minimal documentation and experts who used to manage it already not with the company. It can take years and years to look through million lines of code in order to migrate it. However, AI is good at something like this. In a short time AI can show which part is obsolete and which can be grouped out. This can tremendously help with modernisation efforts too, allowing writing and debugging codes faster. Other than coding, AI has been powerful in learning science and assisting with the tremendous amount of data that scientists need to go through.
+
+Another exciting new project is Watson Orchestrate. Is it your own personal AI in the tools you already use. We saw a demonstration that showed how with only a chat interface to a virtual agent, we could request gathering of data from multiple systems without having to manually login to each one. This means less time working with the system, and more time doing core tasks like working with customers.
+
+Telstra Digital Experience Principal Melissa Dorey shared her HR transformation project. The team has decided to simplify the structure on how to work, transforming to an agile culture and simplify the digital experiences to empower people.
+The HR function implemented a virtual assistance with Watson AI and was able provide easy access to HR questions that staff had. HR team already had a wealth of data available, so it made send to make use of them and let AI give insights into predictable events. Further, the chatbots were intelligent as to ask questions to narrow down the staff's concerns, gave accurate answers and continues to improve with constant feedback. Melissa also talks about a small portion of the remaining negative sentiments towards chatbots, where people sometimes think chatbots are only causing delays and just another obstacle before reaching a human. However the improvement in AI and the team's effort to change the culture has helped to get people realising that they can get to their answers so much faster with AI. So it was a journey of culture transformation here too.
+
+![]( {{page.image3 | relative_url}})
+
+CVS Health CEO Karen S. Lynch highlights the benefits AI had in bringing Americans one step closer to what they enjoy and love. During the covid-19 pandemic, CVS Health has brought in a digital team to put together a system that takes appointments digitally. As a result, more people were able to be vaccinated, and even come back for second shots too when required. The AI intelligent call agents allowed them to change the environment and how to communicate with more customers and more effectively. Karen talks about an inspiring moment when a customer shared deep gratitude during a chat, thanking how he was able to get closer to returning to his lifestyle and doing the things he loved, without knowing that he was talking to a virtual agent that managed to give such personalised level of assistance!
+
+We anticipate that by 2025, data will grow to over 100 Zetabytes. The only way to make sense of the amount of data is AI, and it will equate to how effective a business can be. However AI is power-hungry, and can be a lot to handle. Well did you know IBM is working on hardware to make us able to utilise more AI?
+
+
+### World's first 2nm chip
+
+![]( {{page.image4 | relative_url}})
+
+My favourite session in Think2021 was The hard tech revolutionizing computing, which was guided by IBM Senior VP & Director of IBM Research, Dario Gil. The video itself was very inspiring with the cameraman entering into the research center with Dario's guidance, giving us a nice tour and letting us hear from the most intelligent researchers as IBM work on various hardware components in IBM's own massive research lab. Seeing the actual hard technology is definitely exciting!
+
+![]( {{page.image5 | relative_url}})
+
+If you have seen the headlines then you may know already, but IBM has just invented the world's first 2nanometer chip. This is like having 50 billion transistors all in the size of your fingernail! Seeing the tour in Think2021 was definitely uplifting, and further exciting to learn that this helps to improve computer performance by 45% and reduce power consumption by 25%.  
+This is when I could see that IBM is really all in with Hybrid Cloud and AI across the whole stack. Not only providing the cloud framework and tools, IBM is also committed to refining the hardware and improving performance too.  
+We also saw a tour into the lab for IBM System Z, which is the greenest server in the planet. It can keep running even if storage and I/O are taken out, it will run complex AI tasks in milliseconds!
+
+
+### Wrap up
+
+To bring it all together, data keeps growing and IT infrastructure keeps getting complicated, so it makes sense that IBM is all in for Hybrid Cloud and AI. It enables businesses to continue their journey of success and innovation. A strong and clear message was given in Think2021.
+
+To keep my message simple there are many things that I couldn’t cover like Security. There are plenty of opportunities for IBM members to engage with anybody who is interested in the deeper discussions. I am also open to your thoughts and opinions, both general and in regards to this blog post. Feel free to connect with me via LinkedIn!
+
+
