@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Why Kubernetes for microservices architecture? Why orchestration is essential"
-date:   2021-05-23 21:01:54 +1100
+date:   2021-06-01 21:01:54 +1100
 category: Tech
 image: /images/kubernetes.png
 image1: /blog-tech/assets/images/dockerfile.png
@@ -24,7 +24,7 @@ Before I start, quick definition of containers/microservices. These explanations
 
 ### Quick definition of containers / microservices
 <span style="color:blue">A) The *Pet vs Cattle* analogy: In a monolith application, services are nurtured like precious pets but when it fails everything falls down. In reverse, machines in microservices are expected to fail, and when it does, it can easily be replaced using built-in automation.</span>  
-<span style="color:red">B) Containers are *loosely-coupled*: It is decentralised, or detached from each other and communicates with each other.</span> 
+<span style="color:red">B) Containers are *loosely-coupled*: It is decentralised, or detached from each other and communicates with each other.</span>  
 <span style="color:green">C) Microservices work on a *distributed computing* environment: Due to it's decentralised nature it can run anywhere and will be designed to run everywhere.</span> 
 
 ###  Question 1: Can your operations team handle workloads for managing containers manually?
