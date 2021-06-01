@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Does my business need microservices architecture?"
+title:  "Does my business need microservices architecture? What implications will I face?"
 date:   2021-05-02 21:01:54 +1100
 category: Business
 image: /images/kubernetes.png
@@ -35,7 +35,7 @@ The microservice architecture enables the rapid, frequent and reliable delivery 
 So what does that mean? I would especially focus on the ‘loosely coupled’ feature. If services are tightly coupled, they are dependent such that failures in upstream services could cause failure in downstream services like a domino effect; which can be catastrophic. We wish to ‘de-couple’ the services in order to prevent outages from one service affecting another.
 
 How do we de-couple them? **Containers!** (Yes containers and microservices are different). Containers are best described with metaphor or a container ship with services packages as one container, and can be moved around anywhere.  
-How do we use containers? **Container platform like Docker!** (Docker is common but there are others like rkt). Docker allows you to run containers over linux OS on a docker engine. As long as you have a system running linux, the services can be run anywhere. And it’s very light weight too. Regardless of your technical involvement in the business, it would be good to reference the following diagram and get an idea of the light-weightedness:
+How do we use containers? **Container engine like Docker!** (Docker is common and I am using it to simplify my explanation, but there are other docker runtime like CRI-O). Docker allows you to run containers over linux OS on a docker engine. As long as you have a system running linux, the services can be run anywhere. And it’s very light weight too. Regardless of your technical involvement in the business, it would be good to reference the following diagram and get an idea of the light-weightedness:
 
 ![]( {{page.image1 | relative_url}})
 
