@@ -4,32 +4,33 @@ title:  "Mini-demo: How can I optimise storage by using IBM Cloud object storage
 date:   2021-08-28 21:01:54 +1100
 category: Tech
 image: /images/icos.png
-image1: /blog-tech/assets/images/icos1.png
-image2: /blog-tech/assets/images/icos2.png
-image3: /blog-tech/assets/images/icos3.png
-image4: /blog-tech/assets/images/icos4.png
-image5: /blog-tech/assets/images/icos5.png
-image6: /blog-tech/assets/images/icos6.png
-image7: /blog-tech/assets/images/icos7.png
-image8: /blog-tech/assets/images/icos8.png
-image9: /blog-tech/assets/images/icos9.png
-image10: /blog-tech/assets/images/icos10.png
-image11: /blog-tech/assets/images/icos11.png
-image12: /blog-tech/assets/images/icos12.png
-image13: /blog-tech/assets/images/icos13.png
+image1: /blog-tech/assets/images/icos/icos1.png
+image2: /blog-tech/assets/images/icos/icos2.png
+image3: /blog-tech/assets/images/icos/icos3.png
+image4: /blog-tech/assets/images/icos/icos4.png
+image5: /blog-tech/assets/images/icos/icos5.png
+image6: /blog-tech/assets/images/icos/icos6.png
+image7: /blog-tech/assets/images/icos/icos7.png
+image8: /blog-tech/assets/images/icos/icos8.png
+image9: /blog-tech/assets/images/icos/icos9.png
+image10: /blog-tech/assets/images/icos/icos10.png
+image11: /blog-tech/assets/images/icos/icos11.png
+image12: /blog-tech/assets/images/icos/icos12.png
+image13: /blog-tech/assets/images/icos/icos13.png
 ---
 
 
-### Intro
 I recently helped my customer successfully optimise their storage using IBM's storage solutions. During the process, we had over 40TB of data lifted off the baremetal servers, and onto ICOS (IBM Cloud Object Storage). The result was amazing! High availability, ease of access, resilience and of course reduction in costs. I have realised though that often organisations are too busy with operations that taking additional time to reconsider the current architecture may be difficult.  
 The demonstration I did to help show the value of ICOS has been very helpful to the customer, so I decided to take a moment to document it here, I hope this helps for you too!
 
-Quick definition on object storage:  
+### Quick definition on object storage:  
 ICOS is IBM's Object Storage solution, and it is especially useful for storing unstructured data for archiving purposes. As this is a technical blog, I will keep explanation to minimum and get started with the demonstration.  
 [About Object storage](https://www.ibm.com/cloud/object-storage)
 
 Did you know? If you have an IBM Cloud account, you can provisiong Lite instances of ICOS for free!
 In this demo you can try to get your own instance up and running, or just get a picture of how it looks in the portal when you use ICOS.
+
+### DEMO for ICOS
 
 Firstly, go to the catalogue to find ICOS:  
 ![]( {{page.image1 | relative_url}})
@@ -97,3 +98,7 @@ I hope this served as a good intro to ICOS! :)
 [IBM Cloud Object Storage CLI](https://cloud.ibm.com/docs/cloud-object-storage-cli-plugin?topic=cloud-object-storage-cli-plugin-ic-cos-cli&locale=en)
  
 [IBM Cloud CLI Quick Reference (includes the slack communication channel at the bottom for questions)](https://cloud.ibm.com/media/docs/downloads/IBM%20Cloud%20CLI%20quick%20reference.pdf)
+
+[Transferring files with Cyberduck](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-cyberduck)
+
+[Using rclone](https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-rclone)
