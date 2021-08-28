@@ -120,8 +120,10 @@ Credentials are text files, and not secure enough to store sensitive information
 In Kubernetes, various components are loosely coupled so that a particular container is not heavily dependent. In Kubernetes we will call it pods, but a pod is detached from services, which has its own lifecycle and assign IPs, detached from ConfigMaps, detached from persistent storage loosely coupled with the dependencies, which makes it safely able to fail and be replaced. Thus recovery is quicker and most importantly, it can be automated by the orchestrator and you can focus on the more high level operations. This is <span style="color:red">definition B</span> that I mentioned earlier, how the *loosely-coupled* feature is important in a microservices architecture.
 
 ### Additional features to manage - Container registry
-We discussed in the Docker example in the beginning, that a container before it runs, needs to be built as an image. Container registry is a place to store the images. In Kubernetes this process is abstracted, but we still do need the registry where we securely store the images.  
+We discussed in the Docker example in the beginning, that a container before it runs, needs to be built as an image. In Kubernetes this process is abstracted, but we still do need the registry where we securely store the images. Container registry is a place to store the images.  
 Security will be something that needs to be addressed, because images can contain sensitive information.
+Version control is important so change can be tracked, and high availability will help to make the application able to run without being affected.  
+It depends on which provider, but often these are all included in a container registry.
 
 
 ### Additional features to manage - Helm package manager
