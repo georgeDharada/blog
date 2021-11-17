@@ -1,0 +1,84 @@
+---
+layout: post
+title:  "Cheat sheet for Openshift and foundational information"
+date:   2021-10-25 21:01:54 +1100
+category: Tech
+image: /images/openshift.png
+---
+
+Getting into openshift learning can be a handful. So I have made a quick summary on basic architecture overview and user experience, including definitions of various concepts. I also suggest anyone to try the Openshift demo lab which is available through their website.
+
+### Architecture overview:  
+Overview - The basics on what the managed container orchestration platform is all about, and some pre-requisites like programming language support and compliance (FIPS). We also learn that we can break it into Compute, Network and Storage just like any infrastructure design.
+
+Product and Infrastructure Providers - You can deploy openshift with Full Stack Automation (IPI) or Pre-existing Infrastructure (UPI). Certain vendors allow you to deploy in these ways, and IPI is rather new with OpenShift4.5 starting the full stack automated install experience with VMware vSphere infrastructure. [(details)](https://cloud.redhat.com/blog/fully-automated-openshift-deployments-with-vmware-vsphere)   
+Openshift itself is supported anywhere RHEL runs.
+For users needing DIY or lower end capabilities, the light weight Openshift 4 Kubernetes Engine provides core Kubernetes functionalities, without having the whole platform.
+
+Architecture and Concepts - 
+Nodes: are RHEL or RHCOS instances with Openshift installed (Master nodes use RHCOS). From the application binary (images), containers can run.   
+Pod: is the smallest compute unit. Basically, Kubernetes needs a linux-based OS to run on, and Openshift runs on top of Kubernetes.   
+etcd: holds the 'desired and current state' which is essential for openshift to do the auto-correcting.   
+Core Kubernetes provides: Kubernetes API server, scheduler and Cluster management services. Meanwhile Openshift provides: Openshift API server, OLM and web console.   
+Authentication: through role-based access control (RBAC) and other external identity management systems. All users access Openshift through same standard interface.   
+Masters:  monitor pod health and automatically scale / restart pods.   
+Scheduler: Uses real-world topology like regions and zones. Responsible for determining pod placement.   
+Container registry: Comes included in this managed Kubernetes offering: Openshift Container Platform.   
+Application Data: containers are ephemeral. Can use persistent storage which allows use of stateful apps.
+Routing layer: gives access to apps inside Openshift for external clients.
+ReplicaSet: used by Kubernetes, and Openshift uses Replication controller. Helps ensure the required number of pod replicas run at all times
+Deployment: define how to roll out new versions of pods, and creates ReplicaSets or replication controllers
+
+Operators -   
+Pods with operator code that interact with Kubernetes API server, and makes sure specified state of objects are acheived. It is a way of building an application and driving an application on top of Kubernetes, behind Kubernetes APIs. It has an SDK, Lifecycle Manager (OLM) and Metering in the Framework toolkit.   
+Operators are shared in the OperatorHub.io community. 
+
+Networking Workflow -   
+Routes help exposes services, making it reachable externally with a host name.   
+Routers are different to routes. Router container can run on any node host, and is the routing layer required to reach applications from outside Openshift environment.
+A route object consists of a host name, a route name, a service selector, and optional security configurations. An OpenShift router consumes routes and is a deployment of one or more pods that forwards network traffic to the proper pods.
+For internal communication there is pod connectivity, open vSwitch to route packer to another OpenShift node hosting target container.
+Services have DNS names internal to Openshift, and helps with loadbalancing too.
+
+
+Container Deployment Workflow -   
+New application is requested via CLI, web console or API using Openshift API/authentication, scheduler and worker node.
+
+
+### User Experience
+
+Web Console -   
+Administrator and Developer perspectives are available. Developer perspective is application-centric, and you can view projects, set project access and view metrics.   
+Administrator view is for project and cluster admins. Advanced settings: updates, operators, CRDs, role bindings, resource quotas.
+
+Users and Projects -   
+Projects restrict and track use of resources with quotas and limits. An OpenShift project is an alternative representation of a Kubernetes namespace. A project does have a few additional features on top of basic features of a namespace, like managing resource access for regular users and ability to limit community resource consumption.   
+Basically, namespaces are not available to anyone. An administrator needs to give access to users.   
+Each project has objects, policies, constraints and service accounts.
+You can have regular users and system users.
+
+Quotas and Limits -   
+Set limits on number of objects in project, amount of compute/memory/storage resources, and can use labels to set the boundaries.   
+LimitRanges help schedulers to assign pods to nodes with limits.
+You can view quota from console. When you go over, error message shows current system usage statistics.
+
+Logging and Monitoring -   
+Container log aggregation with EFK stack - 
+Good for logs aggregated from hosts and applications, used by cluster admin. Made of 3 components:   
+1. Elasticsearch: Object store where all logs are stored   
+2. Fluentd: Gathers logs from nodes, feeds them to Elasticsearch   
+3. Kibana: Web UI for Elasticsearch
+
+Metrics collection and alerting with prometheus -   
+Configure horizontal pod autoscaling from prometheus.
+
+Templates, Operators, and Helm 3 -   
+Templates are not associated with pods, and can only create resources.
+Operators are implemented by operator pods and can create, manage and delete resources.
+Helm 3 are package of templates and how application are packaged
+
+With templates, you can create instantly deployable applications for developers or customers. Use labels, parameters and describe set of objects for Openshift to create.   
+With Operator, you can deploy and manage application in cluster.   
+Helm charts are similar to templates, it is a collection of files that describe related set of Kubernetes resources.   
+*Operators are pods that take advantage of custom resource definitions (CRDs)*. CRDs allow extension of Kubernetes/ Openshift API, and allow creation of Custom Resources (CRs). Operator then creates all OpenShift resources that make up application.
+
