@@ -45,7 +45,7 @@ Container Deployment Workflow -
 New application is requested via CLI, web console or API using Openshift API/authentication, scheduler and worker node.
 
 
-### User Experience
+### User Experience with Openshift:
 
 Web Console -   
 Administrator and Developer perspectives are available. Developer perspective is application-centric, and you can view projects, set project access and view metrics.   
@@ -81,4 +81,47 @@ With templates, you can create instantly deployable applications for developers 
 With Operator, you can deploy and manage application in cluster.   
 Helm charts are similar to templates, it is a collection of files that describe related set of Kubernetes resources.   
 *Operators are pods that take advantage of custom resource definitions (CRDs)*. CRDs allow extension of Kubernetes/ Openshift API, and allow creation of Custom Resources (CRs). Operator then creates all OpenShift resources that make up application.
+
+
+### Application Development with openshift:
+
+Main goal of DevOps: speed up and increase flexibility for delivering new features and services.   
+Redhat is build on openness and transparency, it has tools, platforms and infrastructure to enable DevOps for customers!   
+
+Deployment:   
+The configuration written on YAML file (user defined template).   
+In my previous blog on Kubernetes I wrote: The pod abstracts away the container, another system call ReplicaSet manages pods, and Deployments manage ReplicaSets. ReplicaSets in openshift are called Replication Controllers, and Deployments are called Deployment Configurations. Deployments describe the desired state for a particular component of the application.   
+Version controlled and roll back to previous version is possible if latest template fails.
+Deployment Configuration defines a Deployment Strategy:   This supports a variety of deployment scenarios including availability.   
+Rolling deployment Strategy:   Uses Canary deployment model. New instances are always tested before old instances are replaced, so the new instances need to pass the deployment test. It is also the default for using Openshift. However you need to be able to run both old and new code together. If you cannot, there is the recreate strategy.   
+Recreate Strategy: Has basic rollout features and supports lifecycle hooks for injecting codes into the deployment process.   
+Custom Deployment Strategy: Use your own deployment strategies.   
+
+
+CI / CD
+DevOps = Continuous Integration (CI) + Continuous Deployment (CD)   
+Openshift supports DevOps.   
+Jenkins invokes OCP master to build, which then gets the worker nodes to build images via S2I.
+
+Build
+Building is (most of the time) a process of creating runnable images from source code.   
+Openshift can then create containers from the image, and push the container to integrated registry.   
+For build strategies, there is the container build and S2I build, which creates runnable images, and custom images which creates the build image specified by the author.   
+Container build uses podman build command.   
+S2I produces ready-to-run images, and supports incremental builds. S2I builds are more flexible, faster, secure, etc and have many benefits.   
+With custom build, you can use your own builder image to customise the build process.   
+Image streams are used for build, which is similar to container registry that it presents a single view of related images. The images are identified with tags, and images can be added to associated image streams.
+
+Service mesh:
+Istio: Layer for service to service communication.   
+Jaeger: Scalable tracing product, with microservices observability.   
+Kiali: Visualise the openshift service mesh topology.   
+
+Serverless technology:
+Uses Serving and Eventing with Knative.
+
+Pipelines:   
+Pipelines help to define the entire application lifecycle. (eg Jenkins pipeline)   
+Pipelines can survive unplanned restarts, can be paused to take human input, are flexible to allow fork or join and extensible with plugins.   
+Define pipeline workflow in Jenkinsfile.   
 
